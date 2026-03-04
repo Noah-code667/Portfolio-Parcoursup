@@ -1,7 +1,7 @@
 :root {
     --primary: #6C63FF;
     --dark: #1e1e2f;
-    --light: #8aa2b3;
+    --light: #f4f6fb;
     --gray: #888;
 }
 
@@ -124,4 +124,45 @@ footer {
 
 .btn:hover {
     opacity: 0.8;
+}
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 280px;
+}
+
+.about-cv {
+    margin-bottom: 10px;
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+.btn-cv {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 18px 35px;
+    background: linear-gradient(135deg, var(--primary), #5848e5);
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.btn-cv:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
